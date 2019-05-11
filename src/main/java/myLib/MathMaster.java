@@ -4,9 +4,9 @@ public class MathMaster
 {
     public int max(int x, int y)
     {
-        if(x == 0 && y == 0)
+        if(x == y)
         {
-            return 0;
+            return x;
         }
         throw new UnsupportedOperationException();
     }
