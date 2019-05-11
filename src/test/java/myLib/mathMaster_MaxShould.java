@@ -15,7 +15,7 @@ public class mathMaster_MaxShould
         mathMaster = new MathMaster();
     }
 
-    @Test
+    @Theory
     public void returnValueWhenValueOfOperandsSame(int value1, int value2, int expectedResult)
     {
         int result = mathMaster.max(value1,value2);
