@@ -1,4 +1,4 @@
-package MathMaster;
+package myLib;
 
 import static org.junit.Assert.assertTrue;
 
