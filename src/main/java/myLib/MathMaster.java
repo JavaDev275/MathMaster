@@ -8,6 +8,13 @@ public class MathMaster
         {
             return x;
         }
-        throw new UnsupportedOperationException();
+        if(x > y)
+        {
+            return x;
+        }
+        else 
+        {
+            return y;
+        }
     }
 }

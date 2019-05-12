@@ -28,4 +28,16 @@ public class mathMaster_MaxShould
         Assert.assertEquals(expectedResult, result);
     }
 
+    @Test
+    @Parameters({
+        "1,2,2",
+        "-789,-52,-52",
+        "7000,275,7000"
+    })
+    public void returnMaxOfTwoDifferentValues(int value1, int value2, int expectedResult)
+    {
+        int result = mathMaster.max(value1, value2);
+        Assert.assertEquals(expectedResult, result);
+    }
+
 }
