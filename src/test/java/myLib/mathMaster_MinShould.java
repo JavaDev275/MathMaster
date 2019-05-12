@@ -7,11 +7,11 @@ import junitparams.JUnitParamsRunner;
 import junitparams.Parameters;
 
 @RunWith(JUnitParamsRunner.class)
-public class mathMaster_MaxShould
+public class mathMaster_MinShould
 {
     private MathMaster mathMaster;
 
-    public mathMaster_MaxShould()
+    public mathMaster_MinShould()
     {
         mathMaster = new MathMaster();
     }
@@ -24,19 +24,19 @@ public class mathMaster_MaxShould
     })
     public void returnValueWhenValueOfOperandsSame(int value1, int value2, int expectedResult)
     {
-        int result = mathMaster.max(value1,value2);
+        int result = mathMaster.min(value1,value2);
         Assert.assertEquals(expectedResult, result);
     }
 
     @Test
     @Parameters({
-        "1,2,2",
-        "-789,-52,-52",
-        "7000,275,7000"
+        "1,2,1",
+        "-789,-52,-789",
+        "7000,275,275"
     })
     public void returnMaxOfTwoDifferentValues(int value1, int value2, int expectedResult)
     {
-        int result = mathMaster.max(value1, value2);
+        int result = mathMaster.min(value1, value2);
         Assert.assertEquals(expectedResult, result);
     }
 
@@ -51,8 +51,8 @@ public class mathMaster_MaxShould
         int y = 87;
 
         // Act 
-        int result1 = mathMaster.max(x,y);
-        int result2 = mathMaster.max(y,x);
+        int result1 = mathMaster.min(x,y);
+        int result2 = mathMaster.min(y,x);
 
         // Assert
         Assert.assertEquals(result1, result2);
