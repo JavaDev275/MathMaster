@@ -40,4 +40,22 @@ public class mathMaster_MaxShould
         Assert.assertEquals(expectedResult, result);
     }
 
+    /**
+     * Test the fact that Max is commutative - returns the same 
+     * result independent of the order of the operands.
+     */
+    @Test
+    public void returnSameResultIndependentOfOrder(){
+        // Arrange
+        int x = 9;
+        int y = 87;
+
+        // Act 
+        int result1 = mathMaster.max(x,y);
+        int result2 = mathMaster.max(y,x);
+
+        // Assert
+        Assert.assertEquals(result1, result2);
+    }
+
 }
