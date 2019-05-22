@@ -7,12 +7,10 @@ import junitparams.JUnitParamsRunner;
 import junitparams.Parameters;
 
 @RunWith(JUnitParamsRunner.class)
-public class mathMaster_MinShould
-{
+public class mathMaster_MinShould {
     private MathMaster mathMaster;
 
-    public mathMaster_MinShould()
-    {
+    public mathMaster_MinShould() {
         mathMaster = new MathMaster();
     }
 
@@ -22,8 +20,7 @@ public class mathMaster_MinShould
         "-40789,-40789,-40789",
         "275,275,275"
     })
-    public void returnValueWhenValueOfOperandsSame(int value1, int value2, int expectedResult)
-    {
+    public void returnValueWhenValueOfOperandsSame(int value1, int value2, int expectedResult) {
         int result = mathMaster.min(value1,value2);
         Assert.assertEquals(expectedResult, result);
     }
@@ -34,8 +31,7 @@ public class mathMaster_MinShould
         "-789,-52,-789",
         "7000,275,275"
     })
-    public void returnMaxOfTwoDifferentValues(int value1, int value2, int expectedResult)
-    {
+    public void returnMaxOfTwoDifferentValues(int value1, int value2, int expectedResult) {
         int result = mathMaster.min(value1, value2);
         Assert.assertEquals(expectedResult, result);
     }
@@ -45,7 +41,8 @@ public class mathMaster_MinShould
      * result independent of the order of the operands.
      */
     @Test
-    public void returnSameResultIndependentOfOrder(){
+    public void returnSameResultIndependentOfOrder() {
+        
         // Arrange
         int x = 9;
         int y = 87;

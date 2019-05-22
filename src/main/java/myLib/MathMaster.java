@@ -1,25 +1,19 @@
 package myLib;
 
-public class MathMaster 
-{
+public class MathMaster {
+    
     /**
      * Returns the larger of two integers
      * @param x The first of two integers to compare
      * @param y The second of two integers to compare
      * @return Paramter of x or y, whichever is larger
      */
-    public int max(int x, int y)
-    {
-        if(x == y)
-        {
+    public int max(int x, int y) {
+        if(x == y) {
             return x;
-        }
-        if(x > y)
-        {
+        } if(x > y) {
             return x;
-        }
-        else 
-        {
+        } else {
             return y;
         }
     }
@@ -30,18 +24,12 @@ public class MathMaster
      * @param y The second of two integers to compare
      * @return Parameter x or y, whichever is smaller
      */
-    public int min(int x, int y)
-    {
-        if(x == y)
-        {
+    public int min(int x, int y) {
+        if(x == y) {
             return x;
-        }
-        if(x < y)
-        {
+        } if(x < y) {
             return x;
-        }
-        else
-        {
+        } else {
             return y;
         }
     }
