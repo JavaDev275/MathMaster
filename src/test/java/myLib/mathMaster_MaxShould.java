@@ -7,12 +7,10 @@ import junitparams.JUnitParamsRunner;
 import junitparams.Parameters;
 
 @RunWith(JUnitParamsRunner.class)
-public class mathMaster_MaxShould
-{
+public class mathMaster_MaxShould {
     private MathMaster mathMaster;
 
-    public mathMaster_MaxShould()
-    {
+    public mathMaster_MaxShould() {
         mathMaster = new MathMaster();
     }
 
@@ -22,8 +20,7 @@ public class mathMaster_MaxShould
         "-40789,-40789,-40789",
         "275,275,275"
     })
-    public void returnValueWhenValueOfOperandsSame(int value1, int value2, int expectedResult)
-    {
+    public void returnValueWhenValueOfOperandsSame(int value1, int value2, int expectedResult) {
         int result = mathMaster.max(value1,value2);
         Assert.assertEquals(expectedResult, result);
     }
