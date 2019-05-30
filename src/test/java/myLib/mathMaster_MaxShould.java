@@ -7,10 +7,10 @@ import junitparams.JUnitParamsRunner;
 import junitparams.Parameters;
 
 @RunWith(JUnitParamsRunner.class)
-public class mathMaster_MaxShould {
+public class MathMaster_MaxShould {
     private MathMaster mathMaster;
 
-    public mathMaster_MaxShould() {
+    public MathMaster_MaxShould() {
         mathMaster = new MathMaster();
     }
 
