@@ -3,10 +3,10 @@ package myLib;
 import org.junit.Assert;
 import org.junit.Test;
 
-public class mathMaster_MaxShould {
+public class MathMaster_MaxShould {
     private MathMaster mathMaster;
 
-    public mathMaster_MaxShould() {
+    public MathMaster_MaxShould() {
         mathMaster = new MathMaster();
     }
 
