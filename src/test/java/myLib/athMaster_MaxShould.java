@@ -2,7 +2,7 @@ package myLib;
 
 import org.junit.Test;
 
-public class mathMaster_MaxShould {
+public class MathMaster_MaxShould {
     @Test
     public void return0GivenValuesOf0() {
         MathMaster mathMaster = new MathMaster();
