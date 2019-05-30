@@ -7,10 +7,10 @@ import junitparams.JUnitParamsRunner;
 import junitparams.Parameters;
 
 @RunWith(JUnitParamsRunner.class)
-public class mathMaster_MinShould {
+public class MathMaster_MinShould {
     private MathMaster mathMaster;
 
-    public mathMaster_MinShould() {
+    public MathMaster_MinShould() {
         mathMaster = new MathMaster();
     }
 
