@@ -1,18 +1,16 @@
 package myLib;
 
-import org.junit.Assert;
 import org.junit.Test;
 
 public class mathMaster_MaxShould {
-    private MathMaster mathMaster;
-
-    public mathMaster_MaxShould() {
-        mathMaster = new MathMaster();
-    }
-
     @Test
     public void return0GivenValuesOf0() {
+        MathMaster mathMaster = new MathMaster();
         int result = mathMaster.max(0,0);
-        Assert.assertEquals(0, result);
+        if(result == 0){
+            System.out.println("Success");
+        } else {
+            System.out.println("Failed");
+        }
     }
 }
